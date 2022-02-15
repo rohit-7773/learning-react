@@ -1,10 +1,11 @@
 import React from "react";
+import reactLogo from "./react-logo.png";
 
 function Header() {
   return (
     <header>
       <nav>
-        <img src="../public/react-logo.png" width="40px" alt="react logo" />
+        <img src={reactLogo} width="60px" alt="react logo" />
       </nav>
     </header>
   )
