@@ -1,23 +1,45 @@
-import React, {Component} from "react";
+import React from "react";
 
-var pageContent = (
-  <div>
-    <img src="../public/react-logo.png" width="40px" alt="react logo"/>
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100k stars on GitHub</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
-)
-
-class App extends Component {
-    render() {
-      return pageContent;
-    }
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src="../public/react-logo.png" width="40px" alt="react logo" />
+      </nav>
+    </header>
+  )
 }
 
-export default App;
+function Footer() {
+  return (
+    <small>copyright 2022 rohit developments.</small>
+  )
+}
+
+function MainContent() {
+  return (
+    <div>
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100k stars on GitHub</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps, including mobile apps</li>
+      </ul>
+  </div>
+  )
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
+  )
+}
+
+
+export default Page;
